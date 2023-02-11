@@ -1,0 +1,81 @@
+.container {
+  padding-top: 5%;
+  min-height: 1500px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.backBtn {
+  position: absolute;
+  padding: 15px;
+  background-color: white;
+  z-index: 10;
+  top: 20px;
+  left: 10px;
+  border-radius: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.backBtn:hover {
+  opacity: 0.8;
+}
+
+.upper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: white;
+}
+
+.upper h1 {
+  background-color: gray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.thumbnail_img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.tabBtnContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.tabBtn {
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  transition: all 0.2s linear;
+}
+.tabBtn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.tabBox {
+  margin-top: 50px;
+  padding-left: 20px;
+}
+.tabBox p {
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+}
+
+@media screen and (max-width: 1090px) {
+  .backBtn {
+    padding: 5px;
+  }
+
+  .upper {
+    width: 100%;
+    grid-template-columns: 1fr;
+    place-items: center;
+    align-items: center;
+  }
+}
